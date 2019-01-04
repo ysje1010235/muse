@@ -1,0 +1,99 @@
+@import 'base.css';
+
+.clear {clear:both;}
+.clear:after {clear:both; display:block; content:"";}
+.img{ width:100%}
+#header{position: fixed; top: 0; left: 0; width: 100%; z-index: 500;}
+h1{ position:fixed; top:35px; left:120px; z-index:1000; width:200px;}	
+
+/* sns 픽스드 메뉴 */
+.sns_menu{ position:fixed; right:0; top:50%; transform:translate(0%, -50%); font-size:0; z-index:10; opacity: 0.7;}
+
+/*비디오*/
+.bgVideo{ position:relative; text-align:left; height:100vh;}
+.bgVideo video{width:100vw; position:fixed; top:-80px;}	
+
+/*버튼*/
+#btn_menu{position:fixed; top:35px; left:50px; width:45px; height:45px; background:None; font-size:0; z-index:1000;
+ outline:none;}
+#btn_menu span{position:relative; display:inline-block; width:40px; height:4px; margin:0 auto; background:#000;
+font-size:0;}
+#btn_menu span:before, #btn_menu span:after{content: ''; position:absolute; left:0; display:inline-block; width:40px;
+    height:4px; transition:0.3s; background: #000;}
+#btn_menu span:before{top:-11px;}
+#btn_menu span:after{top:11px;}
+
+/*버튼활성화*/
+body.menu_on #btn_menu span {background: transparent;}
+body.menu_on #btn_menu span:before { top:0; height:3px; transform: rotate3d(0,0,1,45deg); }
+body.menu_on #btn_menu span:after { top:0; height:3px; transform: rotate3d(0,0,1,-45deg);}
+
+/*메뉴배경*/	
+#menu_bg{display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:599;}
+body.menu_on #menu_bg{display: block;}
+
+
+/*메뉴*/
+#menu_area { font-family: 'Kanit', sans-serif; position:fixed; top:0px; left:0; width:460px; height:100%; box-sizing: border-box;
+padding:100px 60px 0 60px; background: #fff; z-index:600; transition:0.3s; transform:translateX(-100%); text-transform: uppercase;}
+#menu_area .gnb { padding: 24px 0;}
+#menu_area .gnb li a{ display: inline-block; padding: 0.6em 0; text-decoration: none; color: #222; font-size: 1.6em; font-weight: 600; letter-spacing: 1px;}	
+
+#menu_area div{position:relative; top:0; right:0;}	
+#menu_area div a{display:inline-block; padding:9px 0; text-decoration: none; color: #222; font-weight: 600; letter-spacing: 0.7px}
+#menu_area li{ font-size: 1.5em; color: #222; padding-left: 5px;}
+#menu_area .share{position:absolute; left:60px; margin-top:50px; vertical-align: middle;}
+#menu_area .share img{padding-left: 5px; padding-top: 0.02em;}
+body.menu_on #menu_area{transform: translateX(0);}
+
+
+/*언어*/
+#menu_area .lang{padding: 50px 0 20px; border-bottom:1px solid #ccc;}
+#menu_area .lang a{ padding:0 5px}
+#menu_area .lang a.off{ opacity:0.3}
+
+/*more*/
+.more{/*font-family: 'Nunito Sans', sans-serif;*/font-family: 'Prompt', sans-serif;}
+.more>p{padding-bottom: 1%; font-size: 1.5rem; color:#dea749;}
+.more>span{font-size: 3rem; font-weight: bold;}
+.more>pre{margin-top: 2.5%; line-height: 139%; font-size: 1.5rem; }
+.moreBtn{ border:1px solid black; padding: 18px 40px; font-size: 1.5rem;  }
+
+/*룩북*/
+#main .pattern{ position: relative; height: 700px; background-color:white;}
+#main .pattern .bg{ position: absolute; top: 0; left: 0; width: 50%; height: 400px; background:url(../img/112707.jpg) no-repeat center; background-size: cover; margin-top:100px;}
+
+#main .pattern .ct{ float: right; margin-top: 160px; margin-right:400px;}
+.ct>p{padding-bottom: 4%; font-size: 1.5rem; color:#dea749; text-indent:10px}
+.ct>p:before{ content:"";}
+.ct>span{font-size: 3rem; font-weight: bold;}
+.ct>pre{margin-top: 6.5%; line-height: 139%; font-size: 1.5rem;}
+.line{height: 1px; width: 300px; border: 1px solid #dea749; position: absolute; left: 780px; top: 165px;}
+.line:after{  content: ""; position: absolute; display:block; width: 10px; height: 10px; border: 2px solid #dea749; border-radius: 100%;  top: -7px;left: 298px;}
+
+#main .theme ul{ position: relative; background-color:white;}
+#main .theme ul li{ width: 50%; box-sizing: border-box; padding-right: 113px; text-align: right;}
+#main .theme ul li:nth-child(1){ width: 50%; box-sizing: border-box; padding-right: 113px; text-align: right;}
+#main .theme ul li:nth-child(2){ position: absolute; top: 0; left: 50%; text-align: left; padding: 0}
+#main .theme ul li:nth-child(3){ margin-top: 83px;}
+#main .theme ul li:nth-child(4){ position:absolute; bottom:0; left:50%; text-align:left; padding:50px 0 0; background:#fff;}
+#main .theme ul li a{ display: inline-block; margin-top: 25px;}
+#main .theme ul li:nth-child(1) a img{ width:380px; overflow:hidden;}
+#main .theme ul li:nth-child(1) a img:after{ }
+#main .theme ul li:nth-child(2) a img{ width:600px; overflow:hidden;}
+#main .theme ul li:nth-child(3) a img{ width:580px; overflow:hidden;}
+
+
+/*쇼핑몰*/
+#main .shop{ position:relative; background-color:white; padding-top:250px}
+#main .shop a{background:url(../img/shop_bg.jpg) no-repeat center; background-size:cover; text-align:center; display:block; box-sizing: border-box; width: 100%; height:730px; line-height:730px; padding-top:350px; 
+}	
+
+/*푸터*/
+#footer{position: relative; min-width: 1200px; padding: 40px 0; background: #fff; text-align: center;}
+#footer .utilMenu { font-size: 0; text-align: center; padding-bottom: 20px;}
+#footer .utilMenu li { display: inline-block;}	
+#footer .copyright {line-height: 1.7em; font-size: 12px; color: #000;}
+#footer .utilMenu li a { font-weight: 600; color: #000; font-size: 12px; letter-spacing: -0.5px;}
+#footer .utilMenu li+li a:before {content: 'l';font-weight: normal; color: #000; padding: 0 20px;}
+

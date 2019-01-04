@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="http://ysje1010235.dothome.co.kr/css/common.css" rel="stylesheet">
+<style>
+/*사진레이아웃*/
+#main .pattern{ position: relative; height: 429px; margin: 106px 0 149px;}
+#main .pattern .bg{ position: absolute; top: 0; left: 0; width: 50%; height: 429px; background: url(http://mute-muse.com/web/mutemuse/main/pattern_img.jpg) no-repeat center; background-size: cover;}
+#main .pattern .ct{ position: absolute; top: 129px; left: 50%; margin-left: -230px;}
+#main .theme{ margin-bottom: 200px;}
+#main .theme ul{ position: relative;}
+#main .theme ul li{ width: 50%; box-sizing: border-box; padding-right: 113px; text-align: right;}
+#main .theme ul li:nth-child(1){ width: 50%; box-sizing: border-box; padding-right: 113px; text-align: right;}
+#main .theme ul li:nth-child(2){ position: absolute; top: 0; left: 50%; text-align: left; padding: 0}
+#main .theme ul li:nth-child(3){ margin-top: 83px;}
+#main .theme ul li:nth-child(4){ position: absolute; bottom: 0; left: 50%; text-align: left; padding: 50px 0 0; background: #fff;}
+#main .theme ul li a{ display: inline-block; margin-top: 30px;}
+
+
+#btn_menu{position: fixed;
+    top: 35px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    background: None;
+    font-size: 0;
+    z-index: 600;
+    outline: none;}
+	
+#btn_menu span{position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 3px;
+    margin: 0 auto;
+    background: #000;
+    font-size: 0;}
+
+#btn_menu span:before, #btn_menu span:after{    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 32px;
+    height: 3px;
+    transition: 0.3s;
+    background: #000;
+    -webkit-transform-origin: 0.28571rem center;
+    transform-origin: 0.28571rem center;
+}
+#btn_menu span:before{top: -9px;}
+#btn_menu span:after{top: 9px;}
+h1{    position: fixed;
+    top: 30px;
+    left: 40px;
+    z-index: 600}
+
+#main .shop a{    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 743px;
+    line-height: 743px;
+    padding-top: 350px;
+    background: url(http://mute-muse.com/web/mutemuse/main//shop_bg.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;}	
+
+#footer{position: relative;
+    min-width: 1200px;
+    padding: 40px 0;
+    border-top: 1px solid #333;
+    background: #fff;
+    text-align: center;
+    z-index: 10;}
+	
+	#footer .utilMenu {
+    font-size: 0;
+    text-align: center;
+    padding-bottom: 20px;}
+#footer .utilMenu li {
+    display: inline-block;
+}	
+	#footer .copyright {
+    line-height: 1.7em;
+    font-size: 12px;
+    color: #000;
+}
+#footer .utilMenu li a {
+    font-weight: 600;
+    color: #000;
+    font-size: 12px;
+    letter-spacing: -0.5px;
+}
+#footer .utilMenu li+li a:before {
+    content: 'l';
+    font-weight: normal;
+    color: #000;
+    padding: 0 20px;}
+</style>
+</head>
+
+<body>
+<h1>로고</h1>
+<button id="btn_menu"><span>메뉴</span></button>
+<div id="main" style="position:relative; z-index:10; background:#fff">
+	<div class="pattern">
+		<div class="bg"></div>
+		<div class="ct"><img src="http://mute-muse.com/web/mutemuse/main/pattern_txt.png" alt=""></div>
+	</div>
+
+	<div class="theme">
+		<ul>
+            <li><a href=""><img src="http://mute-muse.com/web/mutemuse/main/theme_img1.jpg" alt=""></a></li>
+			<li><a href=""><img src="http://mute-muse.com/web/mutemuse/main/theme_img2.jpg" alt=""></a></li>
+			<li><a href=""><img src="http://mute-muse.com/web/mutemuse/main/theme_img3.jpg" alt=""></a></li>
+			<li><img src="http://mute-muse.com/web/mutemuse/main/theme_txt.png" alt="">
+            <br><a href="/shopinfo/theme.html">
+            <img src="http://mute-muse.com/web/mutemuse/main/btn_more.png" alt="more"></a></li>
+		</ul>
+        </div>
+
+    <div class="shop">
+		<a href="/product/list.html?cate_no=24">
+        <img src="http://mute-muse.com/web/mutemuse/main/shop.png" alt="">
+        </a>
+	</div>
+    
+<div id="footer">
+<div class="inner">
+
+    <div class="xans-element- xans-layout xans-layout-footer "><ul class="utilMenu">
+   <li><a href="/shopinfo/about.html">COMPANY</a></li>
+            <li><a href="/member/agreement.html">AGREEMENT</a></li>
+            <li><a href="/member/privacy.html"><strong>PRIVACY POLICY</strong></a></li>
+            <li><a href="/shopinfo/guide.html">GUIDE</a></li>
+        </ul>
+<p class="address">
+              <span>법인명: Parenthèse Co.,Ltd.</span>｜<span>대표자: 남혜진</span>｜<span>사업자 등록번호: [398-88-00716]</span>｜<span>통신판매업: 2017-서울강남-04117</span> <span><a href="#none" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=3988800716', 'bizCommPop', 'width=750, height=950;');return false;">[사업자정보확인]</a></span> <br><span>전화: 070-7720-1595</span>｜<span>주소: 서울특별시 강남구 학동로7길 5 (논현동) 3층 파런테즈 (우06044)</span><br><span>개인정보관리책임자: <a href="mailto:contact@parenthese.kr">모완수(contact@parenthese.kr)</a></span>｜<span>호스팅사업자: 카페24</span><br><span>Contact <strong><a href="mailto:contact@parenthese.kr">contact@parenthese.kr</a></strong> for more information.</span>
+        </p>
+<p class="copyright">Copyright © 2018 <strong>MUTEMUSE</strong>. All rights reserved.</p>
+
+</div>
+</div>
+</div>    
+    
+</div>
+</body>
+</html>
